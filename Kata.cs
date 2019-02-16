@@ -99,5 +99,37 @@ namespace Solution
         {
             return arr.Where(e => e > 0).Sum();
         }
+
+        /// <summary>
+        /// Bob is working as a bus driver. However, he has become extremely popular amongst the city's residents. With so many passengers wanting to get aboard his bus, he sometimes has to face the problem of not enough space left on the bus! He wants you to write a simple program telling him if he will be able to fit all the passengers.
+        /// <para>https://www.codewars.com/kata/will-there-be-enough-space/train/csharp</para>
+        /// </summary>
+        /// <param name="cap"></param>
+        /// <param name="on"></param>
+        /// <param name="wait"></param>
+        /// <returns></returns>
+        public static int Enough(int cap, int on, int wait)
+        {
+            return on + wait > cap ? Math.Abs(on + wait - cap) : 0;
+        }
+
+        /// <summary>
+        /// You are given the total volume m of the building. Being given m can you find the number n of cubes you will have to build?
+        /// <para>https://www.codewars.com/kata/build-a-pile-of-cubes/train/csharp</para>
+        /// </summary>
+        /// <param name="m"></param>
+        /// <returns></returns>
+        public static long findNb(long m)
+        {
+            long cubeCount = 1;
+            long volumeCount = 1;
+            while (volumeCount <= m)
+            {
+                if(volumeCount == m) return cubeCount;
+                cubeCount++;
+                volumeCount += (cubeCount * cubeCount * cubeCount);
+            }
+            return -1L;
+        }
     }
 }
