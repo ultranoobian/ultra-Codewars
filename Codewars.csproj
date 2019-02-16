@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abbrev.cs" />
     <Compile Include="Kata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
