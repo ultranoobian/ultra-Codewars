@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -125,11 +126,71 @@ namespace Solution
             long volumeCount = 1;
             while (volumeCount <= m)
             {
-                if(volumeCount == m) return cubeCount;
+                if (volumeCount == m) return cubeCount;
                 cubeCount++;
                 volumeCount += (cubeCount * cubeCount * cubeCount);
             }
             return -1L;
         }
+
+        /// <summary>
+        /// </summary>
+        ///
+        public static int GetLongestPalindrome(string str)
+        {
+            int longestPalindrome = 0;
+            if (String.IsNullOrEmpty(str)) { return longestPalindrome; }
+
+            // Loop through increasing lengths of substrings until the full length
+            for (int subStringLength = 0; subStringLength <= str.Length; subStringLength++)
+            {
+                int position = 0;
+                // Move the substring search through the string
+                while (position + subStringLength <= str.Length)
+                {
+                    if (IsThisAPalindrome(str.Substring(position, subStringLength)))
+                    {
+                        longestPalindrome = subStringLength;
+                        break;
+                    }
+                    position++;
+                }
+            }
+            return longestPalindrome;
+        }
+
+        private static bool IsThisAPalindrome(string str)
+        {
+            return str.SequenceEqual(str.Reverse());
+        }
+
+        /// <summary>There was a test in your class and you passed it. Congratulations!
+        /// But you're an ambitious person. You want to know if you're better than the average student in your class.
+        /// You receive an array with your peers' test scores. Now calculate the average and compare your score!
+        /// <para>https://www.codewars.com/kata/how-good-are-you-really/train/csharp</para>
+        /// </summary>
+        public static bool BetterThanAverage(int[] ClassPoints, int YourPoints)
+        {
+            List<int> list = ClassPoints.ToList();
+            list.Append(YourPoints);
+            return YourPoints > list.Average() ? true : false;
+        }
+
+        /// <summary>In a grid of 6 by 6 squares you want to place a skyscraper in each square with only some clues:
+        /// The height of the skyscrapers is between 1 and 6
+        /// No two skyscrapers in a row or column may have the same number of floors
+        /// A clue is the number of skyscrapers that you can see in a row or column from the outside
+        /// Higher skyscrapers block the view of lower skyscrapers located behind them
+        /// <para>https://www.codewars.com/kata/6-by-6-skyscrapers/train/csharp</para>
+        /// </summary>
+
+        public static int[][] SolvePuzzle(int[] clues)
+        {
+            // Start your coding here...
+
+            //Notes: Backtracing maybe?
+            return null;
+        }
+
     }
 }

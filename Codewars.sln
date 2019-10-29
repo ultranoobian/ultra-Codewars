@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codewars", "Codewars.csproj", "{4CD442B8-BFCC-46A9-9E2D-589227A83571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodewarsTests", "..\CodewarsTests\CodewarsTests.csproj", "{7D244F26-0523-488A-9E6A-DB6606200AA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodewarsTests", "..\CodewarsTests\CodewarsTests.csproj", "{2695C453-92BE-4EEE-B7EE-528292E8C0F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{4CD442B8-BFCC-46A9-9E2D-589227A83571}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CD442B8-BFCC-46A9-9E2D-589227A83571}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CD442B8-BFCC-46A9-9E2D-589227A83571}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D244F26-0523-488A-9E6A-DB6606200AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D244F26-0523-488A-9E6A-DB6606200AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D244F26-0523-488A-9E6A-DB6606200AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D244F26-0523-488A-9E6A-DB6606200AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2695C453-92BE-4EEE-B7EE-528292E8C0F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2695C453-92BE-4EEE-B7EE-528292E8C0F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2695C453-92BE-4EEE-B7EE-528292E8C0F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2695C453-92BE-4EEE-B7EE-528292E8C0F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
