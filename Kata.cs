@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Solution
 {
-    public class Kata
+    public partial class Kata
     {
         #region Old Kata
         public static bool is_valid_IP(string IpAddres)
@@ -174,22 +174,6 @@ namespace Solution
             List<int> list = ClassPoints.ToList();
             list.Append(YourPoints);
             return YourPoints > list.Average() ? true : false;
-        }
-
-        /// <summary>In a grid of 6 by 6 squares you want to place a skyscraper in each square with only some clues:
-        /// The height of the skyscrapers is between 1 and 6
-        /// No two skyscrapers in a row or column may have the same number of floors
-        /// A clue is the number of skyscrapers that you can see in a row or column from the outside
-        /// Higher skyscrapers block the view of lower skyscrapers located behind them
-        /// <para>https://www.codewars.com/kata/6-by-6-skyscrapers/train/csharp</para>
-        /// </summary>
-
-        public static int[][] SolvePuzzle(int[] clues)
-        {
-            // Start your coding here...
-
-            //Notes: Backtracing maybe?
-            return null;
         }
 
     }
